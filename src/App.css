@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.App {
+  background: linear-gradient(rgba(255, 192, 203, 0.664), rgba(0, 0, 255, 0.767));
+  height: 200vh;
+  width: 100vw;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  padding: 1rem;
+  text-align: center;
+}
+
+.subtitle {
+  
+  margin: 0;
+}
+
+.allContainer {
+  display: flex;
+  flex-direction: column;
+    
+}
+
+.winner {
+  background-color: blueviolet;
+  margin-top: 3rem;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.btn {
+  padding: 1.3rem;
+  margin-top: 1rem;
+  font-size: 20px;
+  border-radius: 1rem;
+  cursor: pointer;
+
+  transition: transform 0.5s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.back {
+  margin-top: 1rem;
+  text-decoration: none;
+}
+
+.scoreAndRestart {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  
+}
+
+.cards-container {
+  width: 95%;
+  height: 1000px;
+  margin: 0.5rem;
+  margin-top: 1rem;
+    
+}
+
+.card {
+  display: inline-block;
+  margin: 5px;
+  height: calc(170px - 10px);
+  width: calc(170px - 10px);
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.card:hover {
+  transform: scale(0.98);
+}
+
+.card-image {
+  height: calc(170px - 10px);
+  width: calc(170px - 10px);
+  border-radius: 1rem;
+}
+
+.drawings {
+  margin-top: 2rem;
+  color:#ffffff;
+  font-family: cursive;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.drawings a {
+  text-decoration: none;
+  color: lightseagreen;
+  font-family: cursive;
+}
+
+.game {
+  color: #ffffff;
+}
+
+.game a {
+  text-decoration: none;
+}
+
+@media (min-width: 820px) {
+
+  .App {
+    background: linear-gradient(rgba(255, 192, 203, 0.664), rgba(0, 0, 255, 0.767));
+    height: 120vh;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .allContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+  .cards-container {
+    width: 800px;
+    height: 500px;
+    margin-top: 2rem;
+  }
+
+  .scoreAndRestart {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .card {
+    display: inline-block;
+    margin: 5px;
+    height: calc(170px - 10px);
+    width: calc(190px - 10px);
+    cursor: pointer;
+    border-radius: 1rem;
+  }
+  
+  .card:hover {
+    transform: scale(0.98);
+  }
+  
+  .card-image {
+    height: calc(170px - 10px);
+    width: calc(190px - 10px);
+    border-radius: 1rem;
+  }
+}
